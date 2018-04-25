@@ -9,8 +9,10 @@
     <!--links to style and reset css files-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--link to jquery via cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--link to javascript file-->
-    <style src="assets/javascript/game.js"></style>
+    <script src="assets/javascript/game.js"></script>
     <!--page title-->
     <title>Homework #4</title>
 </head>
@@ -24,31 +26,26 @@
 
     <!--game instruction box-->
     <div id=instructions>
-        <p>You will be given a random number at the start of the game. There are four Crystals
-            below. By clicking on a crystal you will add a specific amount of points to your 
-            total score.  You win the game by matching your total score to random number, you lose
-            the game if your total score goes above the random number. The value of each crystal is 
-            hidden from you until you click on it. Each time when the game starts, the game will 
-            change the values of each crystal.
-        </p>
+        
     </div>
 
     <!--button to hide/display game instructions-->
     <button id=insButton></button>
 
     <!--random number display box-->
-    <div id=target#>
-
+    <div id=targetNumber>
+        
     </div>
 
     <!--total score box-->
-    <div id=your#>
-
+    <div id=yourNumber>
+        <p>your score is:</p>
+        <br>
     </div>
 
     <!--win/loss tracker box-->
     <div id=gameStats>
-
+        
     </div>
 
     <!--container for gem buttons-->
