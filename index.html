@@ -6,8 +6,9 @@
     <!--set the viewport so the page displays across devices correctly-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--links to style and reset css files-->
+    <!--links to style, googlefont, and reset css files-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Faster+One|Gugi|Iceland|Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--link to jquery via cdn-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,7 +22,7 @@
 <body>
     <!--game title header-->
     <header>
-        Crystals Collector!
+        COSMIC CRYSTAL COLLECTOR
     </header>
 
     <!--game instruction box-->
@@ -29,46 +30,120 @@
         
     </div>
 
-    <!--button to hide/display game instructions-->
-    <button id=insButton></button>
-
-    <!--random number display box-->
-    <div id=targetNumber>
-        
+    <div class=buttonHolder>
+    <!--button to hide game instructions-->
+    <button id=insButtonH></button>
+    <!--button to display instructions-->
+    <button id=insButtonD></button>
     </div>
-
-    <!--total score box-->
-    <div id=yourNumber>
-        <p>your score is:</p>
-        <br>
-    </div>
-
-    <!--win/loss tracker box-->
-    <div id=gameStats>
+    
+    <!--container for game display-->
+    <div class=displayHolder>
+        <!--random number display box-->
+        <div id=targetNumber>
         
+        </div>
+
+        <!--total score box-->
+        <div id=yourNumber>
+        </div>
+
+        <!--win/loss tracker box-->
+        <div id=gameStats>
+            
+        </div>
     </div>
 
     <!--container for gem buttons-->
-    <div id=gemBox>
+    <div class=gemBox>
+        <!--four buttons with associated images-->
         <button id=gemButton1>
-
+            <img id=b1Img></img>
         </button>
 
         <button id=gemButton2>
-
+            <img id=b2Img></img>
         </button>
-
+               
         <button id=gemButton3>
-
+            <img id=b3Img></img> 
         </button>
 
         <button id=gemButton4>
-
+            <img id=b4Img></img> 
         </button>
-
     </div>
     
+    <div class=buttonHolder>
+        <!--button to hide collection-->
+        <button id=colButtonH></button>
+        <!--button to display collection-->
+        <button id=colButtonD></button>
+    </div>
 
+    <!--collection display-->
+    <div class=collectionHolder>
+        <!--twelve containers, each with an image of a gem and a p tag to hold the number of accumulated gems-->
+        <div class=collectionBox>
+            <p id=g1></p>
+            <img class=collectionImg src="assets/images/amazonite.png" alt="amazonite">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g2></p>
+            <img class=collectionImg src="assets/images/amethyst.png" alt="amethyst">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g3></p>
+            <img class=collectionImg src="assets/images/calcite.png" alt="calcite">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g4></p>
+            <img class=collectionImg src="assets/images/dioptase.png" alt="dioptase">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g5></p>
+            <img class=collectionImg src="assets/images/flameQuartz.png" alt="flameQuartz">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g6></p>
+            <img class=collectionImg src="assets/images/flouride.png" alt="flouride">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g7></p>
+            <img class=collectionImg src="assets/images/lapis.png" alt="lapis">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g8></p>
+            <img class=collectionImg src="assets/images/malachite.png" alt="malachite">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g9></p>
+            <img class=collectionImg src="assets/images/pyrite.png" alt="pyrite">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g10></p>
+            <img class=collectionImg src="assets/images/rhodochrosite.png" alt="rhodochrosite">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g11></p>
+            <img class=collectionImg src="assets/images/topaz.png" alt="topaz">
+        </div>
+
+        <div class=collectionBox>
+            <p id=g12></p>
+            <img class=collectionImg src="assets/images/tourmaline.png" alt="tourmaline">
+        </div>
+    </div>
 
 
 </body>

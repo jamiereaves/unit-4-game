@@ -1,0 +1,316 @@
+
+/*set the background image for the page. position to display the desired
+portion of the image*/
+body{
+    background-image: url("../images/body.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+/*set width of header to half the page. set padding to place text. set font 
+size/family/color etc... set background color. round corners and give a bright shadow
+to suggest backlighting. center text in header.*/
+header {
+      width: 50%;
+      padding: 10px 10px 5px 10px;
+      font-size: 48px;
+      font-family: 'Gugi', cursive;
+      margin: 20px auto;
+      background: #801039;
+      color: #00d0ed;
+      border-radius: 15px;
+      box-shadow: 1px 1px 4px 4px #00d0ed;
+      text-align: center;
+      overflow: hidden;
+  }
+
+/*set width to 90% of page width. set margin to 10 px to space vertically.
+l/r margins auto to center on page. set padding to place text. set font style/size/
+color etc... set border style/color/width. round corners. center text.*/
+#instructions {
+    width:90%;
+    margin: 15px auto;
+    padding: 5px;
+    color: #801039;
+    border-radius: 8px;
+    border-style: double;
+    border-width: 2px;
+    border-color: #801039;
+    background: #fc8732;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Iceland', cursive;
+}
+
+
+/*set width to 90% of page width. set margin to 10 px to space vertically.
+l/r margins auto to center on page. set font style/size/color etc... set border 
+style/color/width. round corners. center text. hide overflow to prevent content
+displaying outside the container*/
+.collectionHolder{
+    width:90%;
+    height: auto;
+    margin: 15px auto;
+    color: #801039;
+    border-radius: 8px;
+    border-style: double;
+    border-width: 2px;
+    border-color: #801039;
+    background: #fc8732;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Iceland', cursive;
+    overflow: hidden;
+}
+
+/*set width so that 6 boxes fit on a row. set height to 50% so there
+will be two rows of equal height. change display/flex-dir to align 
+child elements vertically and center vertically. auto margins for 
+equal spacing. float left/hide overflow so content will display as desired*/
+.collectionBox{
+    width: 16%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    float: left;
+}
+
+/*button containers take up 20 % of page. auto height, so they adjust
+as necessary. vertical margins for spacing and l/r margins set to auto 
+to center*/
+.buttonHolder{
+    width: 20%;
+    height:auto;
+    margin: 20px auto;
+}
+
+/*gem images are as wide as their parent elements. auto height so they
+scale as the browser width changes. hide overflow*/
+.collectionImg{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*buttons are as wide and high as their parent elements. set background/font color.
+set font style/size. remove default blue outline. center text. add light shadow
+to suggest backlighting.*/
+#insButtonH,
+#insButtonD,
+#colButtonH,
+#colButtonD {
+    width:100%;
+    height:100%;
+    background: #801039;
+    color: #00d0ed;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 4px #00d0ed;
+    text-align: center;
+    overflow: hidden;
+    outline: none;
+    font-family: 'Gugi', cursive;
+    font-size: 20px;
+}
+
+/*for buttons when HOVER. set a more pronounced shadow to "raise" the
+button and indicate the user can click.*/
+#insButtonH:hover,
+#insButtonD:hover,
+#colButtonH:hover,
+#colButtonD:hover {
+    box-shadow: 2px 2px 6px 6px #00d0ed;
+}
+
+/*for buttons when ACTIVE. restore default shadow to "lower" button and
+create a click effect*/
+#insButtonH:active,
+#insButtonD:active,
+#colButtonH:active,
+#colButtonD:active {
+    box-shadow: 1px 1px 4px 4px #00d0ed;
+}
+
+/*container takes up 3/4 of page width, auto height. set background/font color.
+set border style/color/width and round corners. change display/flex-dir so that 
+child elements space evenly horizontally and center these elements. prevent overflow*/
+.displayHolder {
+    width:75%;
+    height:auto;
+    margin: 15px auto;
+    color: #801039;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #801039;
+    background: #fc8732;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*set width so each element is a third of the parent element. set padding
+to place text. set font style and center.*/
+#targetNumber,
+#yourNumber,
+#gameStats {
+    width: 33.3%;
+    font-family: "Audiowide", cursive;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+/*add a double border to the right of the first two child elements*/
+#targetNumber,
+#yourNumber {
+    border-right: #801039;
+    border-right-style: double;
+    border-right-width: 6px;
+}
+
+/*container element for the gem buttons is 4/5 of total page width 1/4 height
+change display/flex-dir so that child elements space evenly horizontally and center 
+these elements. auto margins to center.*/
+.gemBox{
+    width:80%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    margin:auto;
+}
+
+/*set width so four buttons fit within the parent element. round button.
+make the background transparent so it appears invisible. hide border to
+remove outline of button. remove default blue outline.*/
+#gemButton1,
+#gemButton2,
+#gemButton3,
+#gemButton4 {
+    width:22%;
+    border-radius: 100%;
+    height:auto;
+    margin:auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+}
+
+/*gem button images are as wide as their parent element. auto height so
+they scale as the browser width changes. hide overflow*/
+#b1Img, 
+#b2Img, 
+#b3Img, 
+#b4Img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*css for screen widths smaller than 514px. adjusted container widths
+and font sizes to ensure the page displays correctly at v small browser widths
+changed the width of collection box to create 3 rows of four elements*/
+@media only screen and (max-width: 514px) {
+    header {
+        width: 70%;
+        font-size: 28px;
+    }
+
+    #instructions{
+        width:70%;
+        font-size: 14px;
+    }
+
+    .collectionHolder{
+        width:70%;
+        font-size: 8px;
+    }
+
+    .collectionBox{
+        width:25%;
+        margin:auto;
+    }
+
+    .displayHolder{
+        width: 70%;
+        font-size: 8px;
+    }
+
+    .buttonHolder{
+        width: 70%;
+    }
+}
+
+/*css for screen widths between 515px and 768px. adjusted container widths
+and font sizes to ensure the page displays correctly at med browser widths
+changed the width of collection box to create 3 rows of four elements*/
+@media only screen and (min-width:515px) and (max-width:768px) {
+    header {
+        width: 70%;
+        font-size: 36px;
+    }
+
+    #instructions{
+        font-size: 24px;
+    }
+
+    .collectionHolder{
+        width:70%;
+        font-size: 14px;
+    }
+
+    .collectionBox{
+        width:25%;
+        margin:auto;
+    }
+
+    .buttonHolder{
+        width: 50%;
+    }
+
+}
+
+/*css for screen widths between 769px and 946px. adjusted container widths
+and font sizes to ensure the page displays correctly at med/large browser widths*/
+@media only screen and (min-width:769px) and (max-width:946px) {
+    header {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    #instructions{
+        font-size: 24px;
+    }
+
+    .collectionHolder{
+        width:80%;
+        font-size: 14px;
+    }
+
+    /*.collectionBox{
+        width:16.66%;
+        margin:auto;
+    }*/
+
+    .buttonHolder{
+        width:40%;
+    }
+}
+
+/*css for screen widths between 947px and 1192px. adjusted collection font
+size so the rows display correctly. changed button holder width so that
+button text is contained on one line*/
+@media only screen and (min-width:947px) and (max-width:1192px) {
+    .collectionHolder{
+        font-size: 19px;
+    }
+
+    .buttonHolder{
+        width:33%;
+    }
+}
