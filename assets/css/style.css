@@ -11,7 +11,8 @@ body{
 size/family/color etc... set background color. round corners and give a bright shadow
 to suggest backlighting. center text in header.*/
 header {
-      width: 50%;
+      width: 60%;
+      max-width: 760px;
       padding: 10px 10px 5px 10px;
       font-size: 48px;
       font-family: 'Gugi', cursive;
@@ -81,10 +82,20 @@ equal spacing. float left/hide overflow so content will display as desired*/
 /*button containers take up 20 % of page. auto height, so they adjust
 as necessary. vertical margins for spacing and l/r margins set to auto 
 to center*/
-.buttonHolder{
-    width: 20%;
+.buttonHolderA,
+.buttonHolderB {
     height:auto;
     margin: 20px auto;
+}
+
+/*set width for button holder a*/
+.buttonHolderA {
+    width: 200px;
+}
+
+/*set width for button holder b*/
+.buttonHolderB {
+    width: 300px;
 }
 
 /*gem images are as wide as their parent elements. auto height so they
@@ -251,12 +262,12 @@ and font sizes to ensure the page displays correctly at med browser widths
 changed the width of collection box to create 3 rows of four elements*/
 @media only screen and (min-width:515px) and (max-width:768px) {
     header {
-        width: 70%;
+        width: 330px;
         font-size: 36px;
     }
 
     #instructions{
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .collectionHolder{
@@ -281,10 +292,11 @@ and font sizes to ensure the page displays correctly at med/large browser widths
     header {
         width: 90%;
         font-size: 40px;
+        max-width: 630px;
     }
 
     #instructions{
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .collectionHolder{
@@ -292,10 +304,7 @@ and font sizes to ensure the page displays correctly at med/large browser widths
         font-size: 14px;
     }
 
-    /*.collectionBox{
-        width:16.66%;
-        margin:auto;
-    }*/
+
 
     .buttonHolder{
         width:40%;

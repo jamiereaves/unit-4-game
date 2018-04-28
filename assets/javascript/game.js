@@ -102,6 +102,7 @@ var initialView = function(){
         $("#colButtonH").hide();
         $("#colButtonH").html("HIDE YOUR COLLECTION");
         $("#instructions").css("display", "inherit");
+        $("#instructions").css("max-width", "1300px");
         $(".collectionHolder").css("display", "none");
         //display collection stats
         $("#g1").html("AMAZONITE: <br><br>" + amazonite);
@@ -212,6 +213,7 @@ $("#gemButton1").click(function(){
         $("#insButtonH").show();
         $("#insButtonD").hide();
         //display win message
+        $("#instructions").css("max-width", "800px");
         $("#instructions").html("you win-congratulations! press the escape key to play again!");
         //update win counter
         $("#gameStats").html("WINS: " + wins + "<br><br> LOSSES: " + losses);
@@ -255,6 +257,7 @@ $("#gemButton1").click(function(){
         losses++;
         //display loss message, make sure hide button is visible and show
         //button is hidden
+        $("#instructions").css("max-width", "700px");
         $("#instructions").css("display", "inherit");
         $("#insButtonH").show();
         $("#insButtonD").hide();
@@ -339,6 +342,7 @@ $(document).ready(function() {
             wins++;
             //display win message, make sure hide button is visible and show
             //button is hidden
+            $("#instructions").css("max-width", "800px");
             $("#instructions").css("display", "inherit");
             $("#insButtonH").show();
             $("#insButtonD").hide();
@@ -388,6 +392,7 @@ $(document).ready(function() {
             losses++;
             //display loss message, make sure hide button is visible and show
             //button is hidden
+            $("#instructions").css("max-width", "700px");
             $("#instructions").css("display", "inherit");
             $("#insButtonH").show();
             $("#insButtonD").hide();
@@ -472,6 +477,7 @@ $(document).ready(function() {
             wins++;
             //display win message, make sure hide button is visible and show
             //button is hidden
+            $("#instructions").css("max-width", "800px");
             $("#instructions").css("display", "inherit");
             $("#insButtonH").show();
             $("#insButtonD").hide();
@@ -519,6 +525,7 @@ $(document).ready(function() {
             losses++;
             //display loss message, make sure hide button is visible and show
             //button is hidden
+            $("#instructions").css("max-width", "700px");
             $("#instructions").css("display", "inherit");
             $("#insButtonH").show();
             $("#insButtonD").hide();
@@ -603,6 +610,7 @@ $(document).ready(function() {
             wins++;
             //display win message, make sure hide button is visible and show
             //button is hidden
+            $("#instructions").css("max-width", "800px");
             $("#instructions").css("display", "inherit");
             $("#insButtonH").show();
             $("#insButtonD").hide();
@@ -650,6 +658,7 @@ $(document).ready(function() {
             losses++;
             //display loss message, make sure hide button is visible and show
             //button is hidden
+            $("#instructions").css("max-width", "700px");
             $("#instructions").css("display", "inherit");
             $("#insButtonH").show();
             $("#insButtonD").hide();
